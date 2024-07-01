@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: black;
+  }
+
+  /* ChatGPT guide was needed to create the enlarge animation*/
+.enlarge-button { 
+    transition: transform 0.5s ease; 
+  } 
+
+.enlarge-button:hover {
+    transform: scale(1.04);
+}
+
+/* ChatGPT guide was needed to create the fade in animation*/
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+  
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* In order to allocate Certificate and Project section title */
+.flex-item-right {
+    display: flex;
+    padding: 4vh;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item-left {
+    display: flex;
+    width: 66%;
+    padding: 4vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-projects {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    height: 100%;
+    /* padding: 4vh; */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-credentials {
+    display: flex;
+    flex-direction: column;
+    /* padding: 4vh; */
+    width: 25%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-spacing {
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+/* to display my selfie on inde.html */
+.circular-image {
+    border-radius: 70%;
+    border-color: white;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Used to redirect to the certificate when clicked */
+.pdf {
+    width: 100%; 
+    height: 26vh;
+    position: relative;
+    z-index: 1;
+}
+
+.pdf-overlay {
+    position: absolute;
+    background-color:  rgba(255, 255, 255, 0);
+    cursor: pointer;
+    z-index: 2;
+    width: 34vh;
+    height: 26vh;
+    align-self: center;
+}
+
+/* These are used only in edit.html */
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
+}
+
+.edit-item {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 4vh;
+}

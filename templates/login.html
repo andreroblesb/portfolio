@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Calling needed source files-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Log in</title>
+</head>
+<body>
+  <!-- Login box -->
+    <div class="edit-container has-background-primary-05" style="height: 100%; background-image: url(/static/images/black-thread-light.png); background-attachment: fixed;">
+        <h1 class="title enlarge-button">Owner log in</h1>
+        <div class=" edit-item card enlarge-button">
+          <form action="/login" method="post">
+              <div class="field">
+                  <p>
+                    <input class="input" type="text" name="username" placeholder="Username">
+                  </p>
+                </div>
+                <div class="field">
+                  <p>
+                    <input class="input" type="password" name="password" placeholder="Password">
+                  </p>
+                </div>
+                <div class="field">
+                  <p>
+                    <button class="button is-success" type="submit" disabled>Login</button>
+                    <!-- <a class="button is-success" href="{{ url_for('edit')}}">Login</a> -->
+                    <a class="button is-success" href="index.html">Homepage</a>
+                  </p>
+                </div>
+          </form>
+    </div>
+</body>
+</html>
