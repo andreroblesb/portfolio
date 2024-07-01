@@ -1,3 +1,16 @@
+.info-section{
+    display: none;
+    padding: 2vh; padding-left: 6vh; color: white; align-items: center; justify-content: start;
+}
+
+.cellphone-title{
+    display: none;
+}
+
+.cellphone-hr{
+    display: none;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -7,6 +20,8 @@ body, html {
     scroll-behavior: smooth;
     background-color: black;
   }
+
+
 
   /* ChatGPT guide was needed to create the enlarge animation*/
 .enlarge-button { 
@@ -125,4 +140,122 @@ body {
     justify-content: flex-start;
     align-content: center;
     padding: 4vh;
+}
+
+.my-navbar-background{
+    height: 18%;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+}
+
+.interior-padding{
+    padding: 2vh;
+}
+
+
+@media (max-width: 768px) {
+    /* General body and html adjustments for smaller screens */
+
+    
+    body, html {
+        padding: 5px; /* Add slight padding to prevent elements from touching the screen edges */
+        background-color: #333; /* Optional: Darker color for better readability in mobile */
+        width: 100%;
+    }
+
+    .cellphone-title, .cellphone-hr{
+        display: flex;
+    }
+
+    .computer-title{
+        display: none;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .my-navbar-background{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .info-section{
+        display: flex;
+    }
+
+    .buttons.has-addons {
+        display: flex;
+        flex-wrap: nowrap; /* Prevents buttons from wrapping onto the next line */
+        justify-content: center; /* Keeps buttons centered */
+        width: 100%; /* Ensures the container takes full width */
+    }
+
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    .card{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .flex-projects {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: 100%;
+        padding: 1vh;
+        align-items: center;
+    }
+
+    
+
+    .interior-padding{
+        padding: 1vh;
+        /* transform: scaleX(0.88);
+        transform-origin: center; */
+ 
+    }
+
+    .flex-item-left{
+        display: none;
+    }
+
+    .flex-item-right{
+        display: flex;
+        padding: 3vh;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .flex-credentials {
+        display: flex;
+        flex-direction: column;
+        padding: 1vh;
+        width: 85%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .footer {
+        overflow-x: hidden;
+    }
+
+    * {
+        border: 1px solid red;  /* Adds a red border to every element */
+        margin: 5px;            /* Optional: Adds a margin to see the spacing between elements */
+        box-sizing: border-box; /* Ensures the border does not affect the element's size */
+    }
+
 }

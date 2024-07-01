@@ -11,16 +11,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="static/images/Me.ico" type="image/x-icon">
   </head>
   <body>
 
     <!-- Navigation bar -->
-    <nav class="navbar has-background-primary-00 enlarge-button" aria-label="main navigation" style="width: 100%; position: fixed;">
+    
+    <nav class="navbar has-background-primary-00 enlarge-button" aria-label="main navigation">
         <div class="navbar-start">
             <div class="navbar-brand" style="padding: 2vh; padding-left: 6vh;">
               <div style="display: flex; flex-direction: column; justify-content: flex-start;">
                   <h1 class="title navbar-item has-text-white item enlarge-button" style="margin-bottom: 0;">André Robles Bueckmann </h1>
-                  <h1 class="text has-text-white item enlarge-button" style="margin-top: 0;"> Data Scientist, programming enthusiast. </h1>    
+                  <h1 class="text has-text-white item enlarge-button"> Data Scientist, programming enthusiast. </h1>    
                                 
               </div>
                 <img class="navbar-item circular-image enlarge-button" src="static/images/Me.jpg" alt="A photo of myself.">  
@@ -38,8 +40,18 @@
             </div>       
         </div>
     </nav>
+  
 
-    <section class="hero has-background-warning" style="height: 18vh;"></section>
+    <section class="my-navbar-background has-background-warning"></section>
+
+    <div class="info-section has-background-primary-00 enlarge-button">
+      <img src="static/images/Me.jpg" alt="A photo of myself" class="circular-image" style="margin-right: 2vh; width: 80px; height: 80px; object-fit: cover; border-radius: 50%;">
+      <div>
+          <h1 class="title enlarge-button" style="margin-bottom: 0; font-size: 24px;">André Robles Bueckmann</h1>
+          <h2 class="subtitle enlarge-button" style="margin-top: 0; font-size: 18px;">Data Scientist, programming enthusiast.</h2>
+      </div>
+    </div>
+  
 
     <!-- Motto phrase section -->
     <section class="hero has-background-primary-05" style="background-image: url(static/images/black-thread-light.png); background-attachment: fixed;">
@@ -61,7 +73,8 @@
       <h1 class="title">Projects</h1>
     </div>
     <div class="flex-item-right has-background-warning enlarge-button" style="border-radius: 7px;">
-      <h1 class="title">Certificates</h1>
+      <h1 class="title computer-title">Certificates</h1>
+      <h1 class="title cellphone-title">Certificates & Projects </h1>
     </div>
   </section>  
 
@@ -71,8 +84,10 @@
     <!-- PAPER MATEMATICAS MASTERMIND -->
     <div class="flex-projects" style="border-radius: 7px; ">
         <div class="card item enlarge-button">
-          <div style="padding: 2vh;">
-              <h1 class="title">Introducción matemática a MASTERMIND</h1>
+          
+          <div class="interior-padding">
+            <hr class="cellphone-hr" style="background-color: white;">
+              <h1 class="title cellphone-title">Introducción matemática a MASTERMIND</h1>
               <h1 class="subtitle has-text-danger">Completed</h1>
               
               <div style="justify-content: flex-start;">
@@ -84,7 +99,7 @@
               </div>
             <hr>
               <div class="content" style="padding: 2vh;">
-                <p class="text">
+                <p class="text has-text-white">
                   Este ensayo comprende una breve introducción matemática al juego de mesa Mastermind creado en 1970 por Mordecai Meirowitz. Este juego comprende adivinar un código secreto recibiendo retroalimentación ternaria a cada turno, y se juega a dos roles (aunque técnicamente la mayor diversión solo se lo lleva uno!). El ojetivo primordial del escrito es encontrar la mejor primera jugada para el jugador que adivina el código. Para lograrlo, se hace uso de estadística bayesiana, combinatorias, y un segundo análisis con enfoque frecuentista.
                 </p>
                 <div class="hero" style="align-items: center;">
@@ -120,10 +135,11 @@
                   </table>
                 </div>
                 <hr>
-                <p>Completado: <time datetime="2016-1-1"> Febrero, 2023 </time></p>
+                <p class="has-text-white">Completado: <time datetime="2016-1-1"> Febrero, 2023 </time></p>
               </div>
+              <hr class="cellphone-hr" style="background-color: white;">
             </div>
-        </div>      
+        </div>    
     </div>
     
 
