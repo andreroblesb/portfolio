@@ -229,8 +229,9 @@ body {
         overflow-x: hidden;
     }
 
-    .enlarge-button{
+    .enlarge-button:hover{
         transition: none;
+        transform: none;
     }
 
     /* * {
