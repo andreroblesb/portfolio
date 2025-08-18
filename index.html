@@ -3,412 +3,752 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ARB.CV</title>
     <!-- Importing the corresponding Bulma files-->
-     <!-- Used help from documentation and ChatGPT to know moreless what to import -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="static/images/Me.ico" type="image/x-icon">
+    <!-- Used help from documentation and ChatGPT to know moreless what to import -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="static/images/Me.ico" type="image/x-icon" />
   </head>
   <body>
-
     <!-- Navigation bar -->
-    
-    <nav class="navbar has-background-primary-00 enlarge-button" aria-label="main navigation">
-        <div class="navbar-start">
-            <div class="navbar-brand">
-              <div class="nav-thingy">
-                  <h1 class="title navbar-item has-text-white item enlarge-button" style="margin-bottom: 0;">André Robles Bueckmann </h1>
-                  <h1 class="text has-text-white item enlarge-button"> Data Scientist, programming enthusiast. </h1>        
-              </div>
-                <img class="navbar-item circular-image enlarge-button" src="static/images/Me.jpg" alt="A photo of myself.">  
-            </div>
-        </div>
 
-        <div class="navbar-end">
-            <div class="navbar-menu">
-                <div class="buttons nav-buttons">
-                    <a class="button is-primary is-outlined" onclick="scrollToSkills()">Skills</a>
-                    <a class="button is-primary is-outlined js-modal-trigger" data-target="contact-modal">Contact me</a>
-                    <a class="button is-primary is-outlined" href="static/CV.pdf" download="ARB_CV">Download CV</a>
-                    <a class="button is-warning is-outlined" href="login.html">Owner Log in</a>         
-                </div>
-            </div>       
+    <nav
+      class="navbar has-background-primary-00 enlarge-button"
+      aria-label="main navigation"
+    >
+      <div class="navbar-start">
+        <div class="navbar-brand">
+          <div class="nav-thingy">
+            <h1
+              class="title navbar-item has-text-white item enlarge-button"
+              style="margin-bottom: 0"
+            >
+              André Robles Bueckmann
+            </h1>
+            <h1 class="text has-text-white item enlarge-button">
+              Data Scientist, programming enthusiast.
+            </h1>
+          </div>
+          <img
+            class="navbar-item circular-image enlarge-button"
+            src="static/images/Me.jpg"
+            alt="A photo of myself."
+          />
         </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-menu">
+          <div class="buttons nav-buttons">
+            <a class="button is-primary is-outlined" onclick="scrollToSkills()"
+              >Skills</a
+            >
+            <a
+              class="button is-primary is-outlined js-modal-trigger"
+              data-target="contact-modal"
+              >Contact me</a
+            >
+            <a
+              class="button is-primary is-outlined"
+              href="static/CV.pdf"
+              download="ARB_CV"
+              >Download CV</a
+            >
+            <a class="button is-warning is-outlined" href="login.html"
+              >Owner Log in</a
+            >
+          </div>
+        </div>
+      </div>
     </nav>
-  
 
     <section class="my-navbar-background has-background-warning"></section>
 
     <!-- ONLY MOBILE-->
     <div class="info-section has-background-primary-00 enlarge-button">
-      <img src="static/images/Me.jpg" alt="A photo of myself" class="circular-image">
+      <img
+        src="static/images/Me.jpg"
+        alt="A photo of myself"
+        class="circular-image"
+      />
       <div>
-          <h1 class="title enlarge-button">André Robles Bueckmann</h1>
-          <h2 class="subtitle enlarge-button">Data Scientist, programming enthusiast.</h2>
+        <h1 class="title enlarge-button">André Robles Bueckmann</h1>
+        <h2 class="subtitle enlarge-button">
+          Data Scientist, programming enthusiast.
+        </h2>
       </div>
     </div>
-  
 
     <!-- Motto phrase section -->
-    <section class="hero has-background-primary-05" style="background-image: url(static/images/black-thread-light.png); background-attachment: fixed;">
+    <section
+      class="hero has-background-primary-05"
+      style="
+        background-image: url(static/images/black-thread-light.png);
+        background-attachment: fixed;
+      "
+    >
       <div>
         <div class="hero-body has-text-white" style="text-align: center">
-            <p class="title enlarge-button">
-                <strong>"</strong>Devoto al <strong> movimiento"</strong>
-            </p>
-            <p class="subtitle enlarge-button">
-                Seguidor del <strong> conocimiento</strong>
-            </p>
-        </div>        
+          <p class="title enlarge-button">
+            <strong>"</strong>Devoto al <strong> movimiento"</strong>
+          </p>
+          <p class="subtitle enlarge-button">
+            Seguidor del <strong> conocimiento</strong>
+          </p>
+        </div>
       </div>
     </section>
 
-  <!-- Title of Projects and Certificates Section -->
-  <section class="flex-container has-background-primary-00 enlarge-button">
-    <div class="flex-item-left has-background-primary enlarge-button">
-      <h1 class="title">Written papers</h1>
-    </div>
-    <div class="flex-item-right has-background-warning enlarge-button">
-      <h1 class="title computer-title" style="padding-top:2vh;">Certificates</h1>
-      <h1 class="title cellphone-title">Projects & certificates </h1>
-    </div>
-  </section>  
-
-  <!-- Actual projects and certificates section -->
-  <section class="flex-container has-background-primary-05" style="background-image: url('static/images/black-thread-light.png'); background-attachment: fixed;">
-    
-    <!-- PAPER MATEMATICAS MASTERMIND -->
-    <div class="flex-projects">
-
-            <div class="card enlarge-button" style="background-color: #14161A;">
-                    
-              <div class="project-details">
-
-                <h1 class="title">Exploración de estrategias evolutivas para optimización EE-(1+1), EE-(mu+lambda)</h1>
-                <h1 class="subtitle has-text-danger">Completed</h1>
-
-                <div class="buttons has-addons">
-                  <button class="button has-text-white is-static">Short-term</button>
-                  <button class="button has-text-white is-static has-background-danger">Medium-term</button>
-                  <button class="button has-text-white is-static">Long-term</button>
-                </div>
-                <hr>
-
-                <p class="text has-text-white">
-                  En este reporte se realiza una exploración de dos estrategias evolutivas para la optimización de funciones con dos variables objetivo. Las estrategias evolutivas son un componente del computo evolutivo con axiomas propios del Darwinismo y con el propósito de emular un comportamiento similar al de la evolución de las especies, y por lo mismo representan técnicas estocásticas. Se evalúan 20 simulaciones por estrategia con 7 funciones objetivo diferentes así como se realiza un análisis del rendimiento del mejor individuo. 
-                </p>
-                <br>
-                <iframe style="width: 100%; height: 100%;" src="static/projects/EE_Exploration_performance.html" scrolling="yes"></iframe>
-                <br>
-                <br>
-                <a class="button" href= "static/projects/EE_Exploration_performance.html">
-                  See more
-                </a>
-                <hr>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Technologies</th>
-                          <th>Keywords</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Jupyter Notebook</td>
-                          <td> Evolutive Computing </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td> Evolutive Strategies </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td> Stochastic </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                <hr>
-                <p class="has-text-white">Completado: Junio, 2024</p>
-              </div>
-        </div>
-
-        <div class="card enlarge-button" style="background-color: #14161A;">
-                    
-              <div class="project-details">
-
-                <h1 class="title">Simulador sistema físico masa-resorte</h1>
-                <h1 class="subtitle has-text-danger">Completed</h1>
-
-                <div class="buttons has-addons">
-                  <button class="button has-text-white is-static has-background-danger">Short-term</button>
-                  <button class="button has-text-white is-static">Medium-term</button>
-                  <button class="button has-text-white is-static">Long-term</button>
-                </div>
-                <hr>
-
-                <p class="text has-text-white">
-                  En este reporte se presenta un simulador de un sistema físico masa-resorte. El sistema se modela con una ecuación diferencial de segundo orden, la cuál presenta dinámicas interesantes a partir de las raíces del polinomio característico. Se incluye un factor de amortiguamiento para simular la fricción del sistema. El reporte se realizó en un liveScript de MATLAB.
-                </p>
-                <br>
-                <iframe style="width: 100%; height: 100%;" src="static/projects/MasaResorte.pdf" scrolling="yes"></iframe>
-                <br>
-                <br>
-                <a class="button" href= "static/projects/MasaResorte.pdf">
-                  See more
-                </a>
-                <hr>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Technologies</th>
-                          <th>Keywords</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>MATLAB</td>
-                          <td> Second order differential equations </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td> Analytic-solution EDO models </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                <hr>
-                <p class="has-text-white">Completado: Junio, 2024</p>
-              </div>
-        </div>
-
-        <div class="card enlarge-button" style="background-color: #14161A;">
-              
-              <div class="project-details">
-
-                <h1 class="title">Introducción matemática a MASTERMIND</h1>
-                <h1 class="subtitle has-text-danger">Completed</h1>
-
-                <div class="buttons has-addons">
-                  <button class="button has-text-white is-static has-background-danger">Short-term</button>
-                  <button class="button has-text-white is-static">Medium-term</button>
-                  <button class="button has-text-white is-static">Long-term</button>
-                </div>
-                <hr>
-
-                <p class="text has-text-white">
-                  Este ensayo comprende una breve introducción matemática al juego de mesa Mastermind creado en 1970 por Mordecai Meirowitz. Este juego propone adivinar un código secreto recibiendo retroalimentación ternaria a cada turno, y se juega a dos roles (aunque técnicamente la mayor diversión solo se lo lleva uno!). El ojetivo primordial del escrito es encontrar la mejor primera jugada para el jugador que adivina el código. Para lograrlo, se hace uso de estadística bayesiana, combinatorias, y un segundo análisis con enfoque frecuentista.
-                </p>
-                <br>
-                <iframe style="width: 100%; height: 100%;" src="static/projects/EI_Math_SL.pdf" scrolling="yes"></iframe>
-                <br>
-                <br>
-                <a class="button" href= "static/projects/EI_Math_SL.pdf">
-                  See more
-                </a>
-                <hr>
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th>Technologies</th>
-                          <th>Keywords</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Mastermind hardware</td>
-                          <td> Bayesian probability </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td> Frecuentist probability </td>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          <td> Combinatronics </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                <hr>
-                <p class="has-text-white">Completado: Febrero, 2023</p>
-              </div>
-        </div>    
-    </div>
-    
-    <br>
-
-    <div class="flex-credentials">
-      <div class="box enlarge-button">
-        <div class="item" style="background-color: #14161A;">
-          <iframe class="pdf" src="static/certificates/IB_diploma_M23.pdf"> </iframe>
-          <div class="pdf-overlay" onclick='openpdf("static/certificates/IB_diploma_M23.pdf")'></div>
-        </div>
+    <!-- Title of Projects and Certificates Section -->
+    <section class="flex-container has-background-primary-00 enlarge-button">
+      <div class="flex-item-left has-background-primary enlarge-button">
+        <h1 class="title">Written papers</h1>
       </div>
-
-      <div class="box enlarge-button">
-        <div class="item" style="background-color: #14161A;">
-          <iframe class="pdf" src="static/certificates/Coursera_QXLSVDVVW9RN.pdf"> </iframe>
-          <div class="pdf-overlay" onclick='openpdf("static/certificates/Coursera_QXLSVDVVW9RN.pdf")'></div>
-        </div>
+      <div class="flex-item-right has-background-warning enlarge-button">
+        <h1 class="title computer-title" style="padding-top: 2vh">
+          Certificates
+        </h1>
+        <h1 class="title cellphone-title">Projects & certificates</h1>
       </div>
+    </section>
 
-      <div class="box enlarge-button">
-        <div class="item" style="background-color: #14161A;">
-          <iframe class="pdf" src="static/certificates/Coursera_LMPTMBTQP3XP.pdf"> </iframe>
-          <div class="pdf-overlay" onclick='openpdf("static/certificates/Coursera_LMPTMBTQP3XP.pdf")'></div>
-        </div>
-      </div>
+    <!-- Actual projects and certificates section -->
+    <section
+      class="flex-container has-background-primary-05"
+      style="
+        background-image: url('static/images/black-thread-light.png');
+        background-attachment: fixed;
+      "
+    >
+      <!-- PAPER MATEMATICAS MASTERMIND -->
+      <div class="flex-projects">
+        <div class="card enlarge-button" style="background-color: #14161a">
+          <div class="project-details">
+            <h1 class="title">
+              Análisis de datos clínicos en hipertensión arterial en adultos
+              mayores: En colaboración con el Instituto Nacional de Genómica.
+            </h1>
+            <h1 class="subtitle has-text-danger">Completed</h1>
 
-      <div class="box enlarge-button">
-        <div class="item" style="background-color: #14161A;">
-          <iframe class="pdf" src="static/certificates/Coursera_BFUNHFWG5H7R.pdf"> </iframe>
-          <div class="pdf-overlay" onclick='openpdf("static/certificates/Coursera_BFUNHFWG5H7R.pdf")'></div>
-        </div>
-      </div>
-
-      <div class="box enlarge-button">
-        <div class="item" style="background-color: #14161A;">
-          <iframe class="pdf" src="static/certificates/CS50x.pdf"> </iframe>
-          <div class="pdf-overlay" onclick='openpdf("static/certificates/CS50x.pdf")'></div>
-        </div>
-      </div>
-        
-    </div>
-    <br>
-
-
-  </section>
-
-
-
-    <div class="footer has-background-primary-00 enlarge-button">
-        <h1 id="skills" class="title is-1" style="padding-left:2vh;">Skills</h1>
-				<!-- Start Carousel of mastery of programming languages (SKILL footer) -->
-         <!-- In this case decided that was more comfortable to just copy down -->
-				<div id="carousel-demo" class="carousel">
-
-					<div class="box box-spacing has-background-white">
-            <div style="display:flex; justify-content: center; padding: 2vh;">
-              <div class="buttons has-addons">
-                <button class="button is-static has-text-white">Novice</button>
-                <button class="button is-static has-text-white has-background-danger">Proficient</button>
-                <button class="button is-static has-text-white">Advanced</button>
-              </div>
+            <div
+              class="buttons has-addons"
+              style="flex-wrap: nowrap; width: fit-content"
+            >
+              <button
+                class="button has-text-white is-static"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Short-term
+              </button>
+              <button
+                class="button has-text-white is-static"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Medium-term
+              </button>
+              <button
+                class="button has-text-white is-static has-background-danger"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Long-term
+              </button>
             </div>
-            <figure class="item">
-              <img src="static/images/C++-Symbol.png" style="height: 192px;" />
-            </figure>
-					</div>
+            <hr />
 
-					<div class="box box-spacing has-background-white">
-            <div style="display:flex; justify-content: center; padding: 2vh;">
-              <div class="buttons has-addons">
-                <button class="button is-static has-text-white">Novice</button>
-                <button class="button is-static has-background-danger has-text-white">Proficient</button>
-                <button class="button is-static has-text-white">Advanced</button>
-              </div>
-            </div>
-            <figure class="item">
-              <img src="static/images/Python-Symbol.png" style="height: 192px;" />
-            </figure>
+            <p class="text has-text-white">
+              En este reporte se nos proporcionó una base de datos clínica de
+              una iniciativa por parte del Instituo Nacional de Genómica
+              (INMEGEN) para realizar hallazgos dentro de los registros y sus
+              atributos. Se aplicaron técnicas de aprendizaje automático sobre
+              datos clínicos, antropométricos, nutricionales, hábitos, entre
+              otros, para encontrar respuesta lo suficientemente relevante al
+              impacto con la hipertensión arterial sobre personas de tercera
+              edad.
+            </p>
+            <br />
+            <iframe
+              style="width: 100%; height: 100%"
+              src="static/projects/Reporte_HTA.pdf"
+              scrolling="yes"
+            ></iframe>
+            <br />
+            <br />
+            <a
+              class="button"
+              href="static/projects/EE_Exploration_performance.html"
+            >
+              See more
+            </a>
+            <hr />
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Technologies</th>
+                  <th>Keywords</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Oracle XE database</td>
+                  <td>PCA</td>
+                </tr>
+                <tr>
+                  <td>R</td>
+                  <td>Random Forest</td>
+                </tr>
+                <tr>
+                  <td>Flyway</td>
+                  <td>Feature selection</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <p class="has-text-white">Completado: Junio, 2025</p>
           </div>
+        </div>
 
-          <div class="box box-spacing has-background-white">
-            <div style="display:flex; justify-content: center; padding: 2vh;">
-              <div class="buttons has-addons">
-                <button class="button is-static has-text-white">Novice</button>
-                <button class="button is-static has-text-white has-background-danger">Proficient</button>
-                <button class="button is-static has-text-white">Advanced</button>
-              </div>
-            </div>
-            <figure class="item">
-              <img src="static/images/SQL-Symbol.jpg" style="height: 192px;" />
-            </figure>
-					</div>
+        <div class="card enlarge-button" style="background-color: #14161a">
+          <div class="project-details">
+            <h1 class="title">
+              Exploración de estrategias evolutivas para optimización EE-(1+1),
+              EE-(mu+lambda)
+            </h1>
+            <h1 class="subtitle has-text-danger">Completed</h1>
 
-          <div class="box box-spacing has-background-white">
-            <div style="display:flex; justify-content: center; padding: 2vh;">
-              <div class="buttons has-addons">
-                <button class="button is-static has-background-danger has-text-white">Novice</button>
-                <button class="button is-static has-text-white">Proficient</button>
-                <button class="button is-static has-text-white">Advanced</button>
-              </div>
+            <div
+              class="buttons has-addons"
+              style="flex-wrap: nowrap; width: fit-content"
+            >
+              <button
+                class="button has-text-white is-static"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Short-term
+              </button>
+              <button
+                class="button has-text-white is-static has-background-danger"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Medium-term
+              </button>
+              <button
+                class="button has-text-white is-static"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Long-term
+              </button>
             </div>
-            <figure class="item">
-              <image src="static/images/R-Symbol.png" style="height: 192px;"/>
-            </figure>
-					</div>
-          <div class="box box-spacing has-background-white">
-            <div style="display:flex; justify-content: center; padding: 2vh;">
-              <div class="buttons has-addons">
-                <button class="button is-static has-text-white">Novice</button>
-                <button class="button is-static has-background-danger has-text-white">Proficient</button>
-                <button class="button is-static has-text-white">Advanced</button>
-              </div>
+            <hr />
+
+            <p class="text has-text-white">
+              En este reporte se realiza una exploración de dos estrategias
+              evolutivas para la optimización de funciones con dos variables
+              objetivo. Las estrategias evolutivas son un componente del computo
+              evolutivo con axiomas propios del Darwinismo y con el propósito de
+              emular un comportamiento similar al de la evolución de las
+              especies, y por lo mismo representan técnicas estocásticas. Se
+              evalúan 20 simulaciones por estrategia con 7 funciones objetivo
+              diferentes así como se realiza un análisis del rendimiento del
+              mejor individuo.
+            </p>
+            <br />
+            <iframe
+              style="width: 100%; height: 100%"
+              src="static/projects/EE_Exploration_performance.html"
+              scrolling="yes"
+            ></iframe>
+            <br />
+            <br />
+            <a
+              class="button"
+              href="static/projects/EE_Exploration_performance.html"
+            >
+              See more
+            </a>
+            <hr />
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Technologies</th>
+                  <th>Keywords</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Jupyter Notebook</td>
+                  <td>Evolutive Computing</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Evolutive Strategies</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Stochastic</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <p class="has-text-white">Completado: Junio, 2024</p>
+          </div>
+        </div>
+
+        <div class="card enlarge-button" style="background-color: #14161a">
+          <div class="project-details">
+            <h1 class="title">Simulador sistema físico masa-resorte</h1>
+            <h1 class="subtitle has-text-danger">Completed</h1>
+
+            <div class="buttons has-addons">
+              <button
+                class="button has-text-white is-static has-background-danger"
+              >
+                Short-term
+              </button>
+              <button class="button has-text-white is-static">
+                Medium-term
+              </button>
+              <button class="button has-text-white is-static">Long-term</button>
             </div>
-            <figure class="item">
-              <image src="static/images/excel-logo-8033473_640.webp" style="height: 192px;"/>
-            </figure>
-					</div>
-          <div class="box box-spacing has-background-white">
-            <div style="display:flex; justify-content: center; padding: 2vh;">
-              <div class="buttons has-addons">
-                <button class="button is-static has-text-white has-background-danger">Novice</button>
-                <button class="button is-static has-text-white">Proficient</button>
-                <button class="button is-static has-text-white">Advanced</button>
-              </div>
+            <hr />
+
+            <p class="text has-text-white">
+              En este reporte se presenta un simulador de un sistema físico
+              masa-resorte. El sistema se modela con una ecuación diferencial de
+              segundo orden, la cuál presenta dinámicas interesantes a partir de
+              las raíces del polinomio característico. Se incluye un factor de
+              amortiguamiento para simular la fricción del sistema. El reporte
+              se realizó en un liveScript de MATLAB.
+            </p>
+            <br />
+            <iframe
+              style="width: 100%; height: 100%"
+              src="static/projects/MasaResorte.pdf"
+              scrolling="yes"
+            ></iframe>
+            <br />
+            <br />
+            <a class="button" href="static/projects/MasaResorte.pdf">
+              See more
+            </a>
+            <hr />
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Technologies</th>
+                  <th>Keywords</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>MATLAB</td>
+                  <td>Second order differential equations</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Analytic-solution EDO models</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <p class="has-text-white">Completado: Junio, 2024</p>
+          </div>
+        </div>
+
+        <div class="card enlarge-button" style="background-color: #14161a">
+          <div class="project-details">
+            <h1 class="title">Introducción matemática a MASTERMIND</h1>
+            <h1 class="subtitle has-text-danger">Completed</h1>
+
+            <div class="buttons has-addons">
+              <button
+                class="button has-text-white is-static has-background-danger"
+              >
+                Short-term
+              </button>
+              <button class="button has-text-white is-static">
+                Medium-term
+              </button>
+              <button class="button has-text-white is-static">Long-term</button>
             </div>
-            <figure class="item">
-              <image src="static/images/matlab-Symbol.png" style="height: 192px;"/>
-            </figure>
-					</div>
-				</div>
-				<!-- End Carousel -->
+            <hr />
+
+            <p class="text has-text-white">
+              Este ensayo comprende una breve introducción matemática al juego
+              de mesa Mastermind creado en 1970 por Mordecai Meirowitz. Este
+              juego propone adivinar un código secreto recibiendo
+              retroalimentación ternaria a cada turno, y se juega a dos roles
+              (aunque técnicamente la mayor diversión solo se lo lleva uno!). El
+              ojetivo primordial del escrito es encontrar la mejor primera
+              jugada para el jugador que adivina el código. Para lograrlo, se
+              hace uso de estadística bayesiana, combinatorias, y un segundo
+              análisis con enfoque frecuentista.
+            </p>
+            <br />
+            <iframe
+              style="width: 100%; height: 100%"
+              src="static/projects/EI_Math_SL.pdf"
+              scrolling="yes"
+            ></iframe>
+            <br />
+            <br />
+            <a class="button" href="static/projects/EI_Math_SL.pdf">
+              See more
+            </a>
+            <hr />
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Technologies</th>
+                  <th>Keywords</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mastermind hardware</td>
+                  <td>Bayesian probability</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Frecuentist probability</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Combinatronics</td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <p class="has-text-white">Completado: Febrero, 2023</p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="flex-credentials">
+        <div class="box enlarge-button">
+          <div class="item" style="background-color: #14161a">
+            <iframe class="pdf" src="static/certificates/IB_diploma_M23.pdf">
+            </iframe>
+            <div
+              class="pdf-overlay"
+              onclick='openpdf("static/certificates/IB_diploma_M23.pdf")'
+            ></div>
+          </div>
+        </div>
+
+        <div class="box enlarge-button">
+          <div class="item" style="background-color: #14161a">
+            <iframe
+              class="pdf"
+              src="static/certificates/Coursera_QXLSVDVVW9RN.pdf"
+            >
+            </iframe>
+            <div
+              class="pdf-overlay"
+              onclick='openpdf("static/certificates/Coursera_QXLSVDVVW9RN.pdf")'
+            ></div>
+          </div>
+        </div>
+
+        <div class="box enlarge-button">
+          <div class="item" style="background-color: #14161a">
+            <iframe
+              class="pdf"
+              src="static/certificates/Coursera_LMPTMBTQP3XP.pdf"
+            >
+            </iframe>
+            <div
+              class="pdf-overlay"
+              onclick='openpdf("static/certificates/Coursera_LMPTMBTQP3XP.pdf")'
+            ></div>
+          </div>
+        </div>
+
+        <div class="box enlarge-button">
+          <div class="item" style="background-color: #14161a">
+            <iframe
+              class="pdf"
+              src="static/certificates/Coursera_BFUNHFWG5H7R.pdf"
+            >
+            </iframe>
+            <div
+              class="pdf-overlay"
+              onclick='openpdf("static/certificates/Coursera_BFUNHFWG5H7R.pdf")'
+            ></div>
+          </div>
+        </div>
+
+        <div class="box enlarge-button">
+          <div class="item" style="background-color: #14161a">
+            <iframe class="pdf" src="static/certificates/CS50x.pdf"> </iframe>
+            <div
+              class="pdf-overlay"
+              onclick='openpdf("static/certificates/CS50x.pdf")'
+            ></div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </section>
+
+    <div
+      class="footer has-background-primary-00 enlarge-button"
+      style="padding: 18vh"
+    >
+      <h1 id="skills" class="title is-1" style="padding-left: 2vh">Skills</h1>
+      <!-- Start Carousel of mastery of programming languages (SKILL footer) -->
+      <!-- In this case decided that was more comfortable to just copy down -->
+      <div id="carousel-demo" class="carousel">
+        <div class="box box-spacing has-background-white">
+          <div style="display: flex; justify-content: center; padding: 2vh">
+            <div
+              class="buttons has-addons"
+              style="flex-wrap: nowrap; width: fit-content"
+            >
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Novice
+              </button>
+              <button
+                class="button is-static has-text-white has-background-danger"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Proficient
+              </button>
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Advanced
+              </button>
+            </div>
+          </div>
+          <figure class="item">
+            <img src="static/images/C++-Symbol.png" style="height: 192px" />
+          </figure>
+        </div>
+
+        <div class="box box-spacing has-background-white">
+          <div style="display: flex; justify-content: center; padding: 2vh">
+            <div
+              class="buttons has-addons"
+              style="flex-wrap: nowrap; width: fit-content"
+            >
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Novice
+              </button>
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Proficient
+              </button>
+              <button
+                class="button is-static has-text-white has-background-danger"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Advanced
+              </button>
+            </div>
+          </div>
+          <figure class="item">
+            <img src="static/images/Python-Symbol.png" style="height: 192px" />
+          </figure>
+        </div>
+
+        <div class="box box-spacing has-background-white">
+          <div style="display: flex; justify-content: center; padding: 2vh">
+            <div
+              class="buttons has-addons"
+              style="flex-wrap: nowrap; width: fit-content"
+            >
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Novice
+              </button>
+              <button
+                class="button is-static has-text-white has-background-danger"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Proficient
+              </button>
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Advanced
+              </button>
+            </div>
+          </div>
+          <figure class="item">
+            <img src="static/images/sql.png" style="height: 192px" />
+          </figure>
+        </div>
+
+        <div class="box box-spacing has-background-white">
+          <div style="display: flex; justify-content: center; padding: 2vh">
+            <div
+              class="buttons has-addons"
+              style="flex-wrap: nowrap; width: fit-content"
+            >
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Novice
+              </button>
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Proficient
+              </button>
+              <button
+                class="button is-static has-text-white has-background-danger"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Advanced
+              </button>
+            </div>
+          </div>
+          <figure class="item">
+            <image src="static/images/R-Symbol.png" style="height: 192px" />
+          </figure>
+        </div>
+        <div class="box box-spacing has-background-white">
+          <div style="display: flex; justify-content: center; padding: 2vh">
+            <div
+              class="buttons has-addons"
+              style="flex-wrap: nowrap; width: fit-content"
+            >
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Novice
+              </button>
+              <button
+                class="button is-static has-background-danger has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Proficient
+              </button>
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Advanced
+              </button>
+            </div>
+          </div>
+          <figure class="item">
+            <image src="static/images/gherkin.png" style="height: 192px" />
+          </figure>
+        </div>
+        <div class="box box-spacing has-background-white">
+          <div style="display: flex; justify-content: center; padding: 2vh">
+            <div
+              class="buttons has-addons"
+              style="flex-wrap: nowrap; width: fit-content"
+            >
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Novice
+              </button>
+              <button
+                class="button is-static has-text-white has-background-danger"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Proficient
+              </button>
+              <button
+                class="button is-static has-text-white"
+                style="font-size: 0.9rem; padding: 0 0.5rem"
+              >
+                Advanced
+              </button>
+            </div>
+          </div>
+          <figure class="item">
+            <image src="static/images/net.png" style="height: 192px" />
+          </figure>
+        </div>
+      </div>
+      <!-- End Carousel -->
     </div>
-
 
     <!-- Modal html that displays my contact methods -->
     <div id="contact-modal" class="modal">
       <div class="modal-background"></div>
-    
+
       <div class="modal-content">
         <div class="box">
-          <p><strong>Linkedln: </strong><a href="https://www.linkedin.com/in/andré-robles-bueckmann-b45217288">
-            https://www.linkedin.com/in/andré-robles-bueckmann-b45217288</a></p>
-          <p><strong>Email: </strong><a href="mailto:andrerobles2005@gmail.com">
-            mailto:andrerobles2005@gmail.com</a></p>
-          <p><strong>Github: </strong><a href="https://github.com/andreroblesb">
-              https://github.com/andreroblesb</a></p>
+          <p>
+            <strong>Linkedln: </strong
+            ><a href="www.linkedin.com/in/andreroblesb">
+              www.linkedin.com/in/andreroblesb</a
+            >
+          </p>
+          <p>
+            <strong>Email: </strong
+            ><a href="mailto:andrerobles2005@gmail.com">
+              mailto:andrerobles2005@gmail.com</a
+            >
+          </p>
+          <p>
+            <strong>Github: </strong
+            ><a href="https://github.com/andreroblesb">
+              https://github.com/andreroblesb</a
+            >
+          </p>
         </div>
       </div>
-    
+
       <button class="modal-close is-large" aria-label="close"></button>
     </div>
-    
+
     <!-- calling javascript at the end to enhance loading performance of the webpage -->
     <script src="static/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-		<script>
-		bulmaCarousel.attach('#carousel-demo', {
-			slidesToScroll: 1,
-			slidesToShow: 3,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 2000
-		});
-		</script>
     <script>
-      function openpdf(file_path){
+      bulmaCarousel.attach("#carousel-demo", {
+        slidesToScroll: 1,
+        slidesToShow: 3,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    </script>
+    <script>
+      function openpdf(file_path) {
         window.location.href = file_path;
       }
-      function scrollToSkills(){
-        document.getElementById('skills').scrollIntoView();
+      function scrollToSkills() {
+        document.getElementById("skills").scrollIntoView();
       }
     </script>
   </body>
